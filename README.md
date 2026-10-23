@@ -19,19 +19,7 @@ Listings include a title, description, price, category, publication date, and au
 
 The system is organized into three services accessed through a single API gateway:
 
-```text
-                      Client
-                        |
-                  Kong API Gateway
-                        |
-          +-------------+-------------+
-          |             |             |
-     Auth Service  Listing Service  Message Service
-          |             |             |
-          +-------------+-------------+
-                        |
-                   PostgreSQL
-```
+![Application Architecture](scheme.png)
 
 - **Auth Service:** User registration, login, authorization, user management, and persistence.
 - **Listing Service:** Listing CRUD operations, search, and the main marketplace business logic.

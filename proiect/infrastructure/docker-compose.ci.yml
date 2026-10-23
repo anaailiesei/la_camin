@@ -1,0 +1,9 @@
+services:
+  auth-service:
+    environment:
+      JWT_PRIVATE_KEY_LOCATION: file:/app/resources/keys/private.pem
+    volumes:
+      - type: bind
+        source: ${AUTH_PRIVATE_KEY_FILE}
+        target: /app/resources/keys/private.pem
+        read_only: true

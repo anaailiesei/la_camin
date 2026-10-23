@@ -1,0 +1,24 @@
+_format_version: "3.0"
+
+services:
+  - name: auth-service
+    url: http://auth-service:8080
+    routes:
+      - name: auth-routes
+        paths:
+          - /auth
+        strip_path: false
+  - name: listing-service
+    url: http://listing-service:8080
+    routes:
+      - name: listing-routes
+        paths:
+          - /listings
+        strip_path: false
+  - name: message-service
+    url: http://message-service:8080
+    routes:
+      - name: message-routes
+        paths:
+          - /messages
+        strip_path: false

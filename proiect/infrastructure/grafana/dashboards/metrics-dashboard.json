@@ -1,0 +1,20 @@
+{
+  "annotations": { "list": [] },
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Listings created (last 5m)",
+      "targets": [ { "expr": "increase(listing_created_count_total[5m])", "legendFormat": "listings_created" } ],
+      "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 }
+    },
+    {
+      "type": "graph",
+      "title": "Messages sent (last 10m)",
+      "targets": [ { "expr": "increase(message_sent_count_total[10m])", "legendFormat": "messages_sent" } ],
+      "gridPos": { "x": 12, "y": 0, "w": 12, "h": 8 }
+    }
+  ],
+  "schemaVersion": 16,
+  "title": "Service Metrics",
+  "version": 1
+}

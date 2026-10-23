@@ -69,7 +69,3 @@ This project was designed and developed collaboratively by two contributors. Res
 - Overall system architecture.
 - Docker containerization and Docker Compose/Docker Swarm stack configuration.
 - End-to-end testing, debugging, integration, and documentation.
-
-## Repositories
-
-The project specification references separate repositories for Auth Service, Listing Service, and Message Service. Add their GitHub links here once published.
